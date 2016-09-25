@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.nnenkov.battryinfoplusservice.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/currentBatteryStatusLinearLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/batteryStatusInfoLabelCurrentLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current_battery_lavel"
+            android:layout_weight="0.09"
+            android:gravity="left" />
+
+        <TextView
+            android:id="@+id/batteryStatusInfoCurrentLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10%"
+            android:layout_weight="1"
+            android:layout_gravity="left" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/eventsRegisteredLinearLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/currentBatteryStatusLinearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp">
+
+        <TextView
+            android:id="@+id/batteryStatusEventsRegisteredLavel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/battery_status_events_registered"
+            android:layout_weight="0.09"
+            android:gravity="left" />
+
+        <TextView
+            android:id="@+id/batteryEventsRegisteredTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10%"
+            android:layout_weight="1"
+            android:layout_gravity="left" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lastHourBatteryStatusLinearLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+
+        android:layout_height="40dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/eventsRegisteredLinearLayout"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/batteryStatusInfoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/battery_dropped_for_the_last_hour"
+            android:layout_weight="0.12" />
+
+        <TextView
+            android:id="@+id/batteryStatusInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2%"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Button
+        android:text="Refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/refreshButton"
+        android:layout_below="@+id/lastHourBatteryStatusLinearLayout"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

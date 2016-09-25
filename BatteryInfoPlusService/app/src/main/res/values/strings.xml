@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BatteryInfoPlusService</string>
+    <string name="current_battery_lavel">Current Battery level:</string>
+    <string name="battery_dropped_for_the_last_hour">Battery dropped for the last hour:</string>
+    <string name="battery_status_events_registered">Battery status events registered:</string>
+</resources>
