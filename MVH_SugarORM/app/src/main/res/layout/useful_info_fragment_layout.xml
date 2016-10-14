@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/elemetn_frame"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:text="Latitude: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_marginTop="15dp"
+            android:id="@+id/textView3" />
+
+        <TextView
+            android:text="Longitude: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView4" />
+
+        <TextView
+            android:text="37.7749"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_toEndOf="@+id/textView3"
+            android:id="@+id/latitudeTextView" />
+
+        <TextView
+            android:text="-122.4194"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_toEndOf="@+id/textView4"
+            android:id="@+id/longitudeTextView" />
+
+        <TextView
+            android:text="Location Information:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="show on map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/showOnMapButton"
+            android:layout_marginEnd="16dp"
+            android:layout_alignBaseline="@+id/latitudeTextView"
+            android:layout_alignBottom="@+id/latitudeTextView"
+            android:layout_alignParentEnd="true"
+            android:enabled="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/weatherRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/elemetn_frame"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignStart="@+id/relativeLayout"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:text="n/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_toEndOf="@+id/textView3"
+            android:id="@+id/temperatureTextView" />
+
+        <TextView
+            android:text="23:23:23 31/12/2020"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="10sp"
+            android:id="@+id/lastUpdatedWtextView"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:text="Last updated on:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/lastUpdatedWtextView"
+            android:layout_toStartOf="@+id/lastUpdatedWtextView"
+            android:textSize="10sp"
+            android:id="@+id/lastUpdatedLabelTextView"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:text="Temperature: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/textView2"
+            android:layout_alignStart="@+id/textView2" />
+
+        <TextView
+            android:text="Weather cast:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:text="Humidity: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:layout_marginTop="22dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignStart="@+id/textView2" />
+
+        <TextView
+            android:text="n/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/humidityTextView"
+            android:layout_alignBaseline="@+id/textView7"
+            android:layout_alignBottom="@+id/textView7"
+            android:layout_toEndOf="@+id/textView7" />
+
+        <TextView
+            android:text="Windspeed: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/humidityTextView"
+            android:layout_alignStart="@+id/cloudcoverLabelTextView"
+            android:id="@+id/windspeedLabeltextView" />
+
+        <TextView
+            android:text="n/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/windspeedLabeltextView"
+            android:layout_toEndOf="@+id/windspeedLabeltextView"
+            android:id="@+id/windspeedTextView" />
+
+        <TextView
+            android:text="n/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cloudcoverTextView"
+            android:layout_alignBaseline="@+id/cloudcoverLabelTextView"
+            android:layout_alignBottom="@+id/cloudcoverLabelTextView"
+            android:layout_toEndOf="@+id/windspeedLabeltextView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cloudcoverLabelTextView"
+            android:text="Cloudcover: "
+            android:layout_alignBaseline="@+id/temperatureTextView"
+            android:layout_alignBottom="@+id/temperatureTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="100dp" />
+    </RelativeLayout>
+
+</LinearLayout>

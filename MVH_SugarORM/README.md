@@ -1,0 +1,3 @@
+MVH Application - My Vehicles History
+
+The application is used to store the events related with different vehicle types. To remind the owner when some part has to be relapsed  or insurance will expire...

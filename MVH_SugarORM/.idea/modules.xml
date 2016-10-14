@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../../hdd_home/nik/AndroidStudioProjects/MVH_SugarORM/MVH_SugarORM.iml" filepath="$PROJECT_DIR$/../../../hdd_home/nik/AndroidStudioProjects/MVH_SugarORM/MVH_SugarORM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../hdd_home/nik/AndroidStudioProjects/MVH_SugarORM/app/app.iml" filepath="$PROJECT_DIR$/../../../hdd_home/nik/AndroidStudioProjects/MVH_SugarORM/app/app.iml" />
+    </modules>
+  </component>
+</project>

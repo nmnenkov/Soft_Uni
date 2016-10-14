@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.nnenkov.mvh.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.nnenkov.mvh.MainActivity"
+        tools:showIn="@layout/app_bar_main">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/itemDetailsLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    android:divider="@drawable/add_edit_linearlayout_divider"
+                    android:orientation="vertical"
+                    android:showDividers="middle|end">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/add_edit_vehicle_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/nicknameTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.40"
+                            android:text="@string/nickname"
+                            android:textColor="?attr/editTextColor"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <View
+                            android:layout_width="2px"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <EditText
+                            android:id="@+id/nicknameEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.60"
+                            android:background="@android:color/transparent"
+                            android:hint="Hurbi"
+                            android:inputType="text"
+                            android:text=""
+                            android:textSize="@dimen/text_size_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/add_edit_vehicle_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/regNumberTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.40"
+                            android:text="@string/reg_number"
+                            android:textColor="?attr/editTextColor"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <View
+                            android:layout_width="2px"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <EditText
+                            android:id="@+id/regNumerEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.60"
+                            android:background="@android:color/transparent"
+                            android:hint="B MB 6781"
+                            android:inputType="textCapCharacters"
+                            android:text=""
+                            android:textSize="@dimen/text_size_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/add_edit_vehicle_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/typeTextView2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.40"
+                            android:text="@string/type"
+                            android:textColor="?attr/editTextColor"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <View
+                            android:layout_width="2px"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <Spinner
+                            android:id="@+id/vehicleTypeSpinner"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.60"
+
+                            android:prompt="@string/select_vehicle_type"
+                            android:textSize="@dimen/text_size_normal" />
+                        <!--android:background="@android:color/transparent"-->
+                        <!--                    android:entries="@array/vehicles_types_array"-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/add_edit_vehicle_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/brandTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.40"
+                            android:text="@string/brand"
+                            android:textColor="?attr/editTextColor"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <View
+                            android:layout_width="2px"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <Spinner
+                            android:id="@+id/vehicleBrandSpinner"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.60"
+                            android:prompt="@string/select_brand"
+                            android:textSize="@dimen/text_size_normal" />
+                        <!--android:background="@android:color/transparent"-->
+                        <!--android:entries="@array/vehicles_brands_array"-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/add_edit_vehicle_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/modelTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.40"
+                            android:text="@string/model"
+                            android:textColor="?attr/editTextColor"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <View
+                            android:layout_width="2px"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <Spinner
+                            android:id="@+id/vehicleModelSpinner"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.60"
+
+                            android:prompt="@string/select_model"
+                            android:textSize="@dimen/text_size_normal" />
+                        <!--android:background="@android:color/transparent"-->
+                        <!--                    android:entries="@array/vehicles_brands_array"-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/add_edit_vehicle_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/engineTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.40"
+                            android:text="@string/engine"
+                            android:textColor="?attr/editTextColor"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <View
+                            android:layout_width="2px"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <EditText
+                            android:id="@+id/engineEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.60"
+                            android:background="@android:color/transparent"
+                            android:hint="Diesel 2.2 TDI"
+                            android:inputType="textCapCharacters"
+                            android:text=""
+                            android:textSize="@dimen/text_size_normal" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/add_edit_vehicle_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/manufactureYearTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.40"
+                            android:text="@string/manufacture_year"
+                            android:textColor="?attr/editTextColor"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <View
+                            android:layout_width="2px"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <EditText
+                            android:id="@+id/manufactureYearEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.60"
+                            android:background="@android:color/transparent"
+                            android:hint="2016"
+                            android:inputType="number"
+                            android:text=""
+                            android:textSize="@dimen/text_size_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/add_edit_vehicle_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/purchaseDateTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.40"
+                            android:text="@string/purchase_date"
+                            android:textColor="?attr/editTextColor"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <View
+                            android:layout_width="2px"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <EditText
+                            android:id="@+id/purchaseDateEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.60"
+                            android:background="@android:color/transparent"
+                            android:hint="31/01/2016"
+                            android:inputType="date"
+                            android:text=""
+                            android:textSize="@dimen/text_size_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/add_edit_vehicle_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/priceTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.40"
+                            android:text="@string/price1"
+                            android:textColor="?attr/editTextColor"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <View
+                            android:layout_width="2px"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <EditText
+                            android:id="@+id/priceEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.60"
+                            android:background="@android:color/transparent"
+                            android:hint="43500"
+                            android:inputType="numberDecimal"
+                            android:text=""
+                            android:textSize="@dimen/text_size_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/add_edit_vehicle_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/warrantyValidityTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.40"
+                            android:text="@string/warranty_validity"
+                            android:textColor="?attr/editTextColor"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <View
+                            android:layout_width="2px"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <EditText
+                            android:id="@+id/warrantyValidityEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.60"
+                            android:background="@android:color/transparent"
+                            android:hint="31/01/2021"
+                            android:inputType="date"
+                            android:text=""
+                            android:textSize="@dimen/text_size_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/add_edit_vehicle_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/fuelTank1TextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.40"
+                            android:text="@string/fuel_tank1_fuel"
+                            android:textColor="?attr/editTextColor"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <View
+                            android:layout_width="2px"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorPrimaryDark" />
+                        <!--                <EditText
+                                            android:id="@+id/fuelTank1EditText"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="0.60"
+                                            android:background="@android:color/transparent"
+                                            android:hint="Gasoline"
+                                            android:inputType="textCapCharacters"
+                                            android:text=""
+                                            android:textSize="@dimen/text_size_normal" />-->
+                        <Spinner
+                            android:id="@+id/fuelTank1FuelSpinner"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.60"
+                            android:prompt="@string/select_fuel"
+                            android:textSize="@dimen/text_size_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/add_edit_vehicle_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/fuelTank1VolumeTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.40"
+                            android:text="@string/fuel_tank1_volume"
+                            android:textColor="?attr/editTextColor"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <View
+                            android:layout_width="2px"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <EditText
+                            android:id="@+id/fuelTank1VolumeEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.60"
+                            android:background="@android:color/transparent"
+                            android:hint="52"
+                            android:inputType="number"
+                            android:text=""
+                            android:textSize="@dimen/text_size_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/secondFuelTankParenLinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:animateLayoutChanges="true"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/add_edit_vehicle_height"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.SwitchCompat
+                                android:id="@+id/hasSecondFuelTankSwitch"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:text="@string/has_second_fuel_tank"
+                                android:theme="@style/AppSwitch" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/secondFuelTankLinearLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/add_edit_vehicle_height"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/fuelTank2TextView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.40"
+                                android:text="@string/fuel_tank2_fuel"
+                                android:textColor="?attr/editTextColor"
+                                android:textSize="@dimen/text_size_normal" />
+
+                            <View
+                                android:layout_width="2px"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/colorPrimaryDark" />
+                            <Spinner
+                                android:id="@+id/fuelTank2FuelSpinner"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.60"
+                                android:prompt="@string/select_fuel"
+                                android:textSize="@dimen/text_size_normal" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/add_edit_vehicle_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/fuelTank2VolumeTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.40"
+                            android:text="@string/fuel_tank2_volume"
+                            android:textColor="?attr/editTextColor"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <View
+                            android:layout_width="2px"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <EditText
+                            android:id="@+id/fuelTank2VolumeEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.60"
+                            android:background="@android:color/transparent"
+                            android:hint="52"
+                            android:inputType="number"
+                            android:text=""
+                            android:textSize="@dimen/text_size_normal" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/itemDetailsLinearLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+
+                    <Button
+                        android:id="@+id/saveButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Save" />
+
+                    <Button
+                        android:id="@+id/cancelButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cancel" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

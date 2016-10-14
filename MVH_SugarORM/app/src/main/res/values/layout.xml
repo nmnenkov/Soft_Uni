@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_normal">14sp</dimen>
+    <dimen name="add_edit_vehicle_height">30dp</dimen>
+    <dimen name="add_edit_vehicle_double_height">60dp</dimen>
+    <dimen name="add_edit_event_height">30dp</dimen>
+</resources>

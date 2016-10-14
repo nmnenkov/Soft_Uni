@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/elemetn_frame"
+    android:layout_marginTop="5dp">
+
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:id="@+id/vehicleTypeImageView"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@mipmap/car_icon"
+        android:layout_width="50dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/vehicleTypeImageView">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/nickNameRVTextView"
+            android:layout_centerVertical="false"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/modelTextView"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:paddingLeft="5dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

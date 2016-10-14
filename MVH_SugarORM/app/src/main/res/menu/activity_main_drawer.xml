@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Manage">
+        <menu>
+            <item
+                android:id="@+id/manage_vehicles"
+                android:icon="@drawable/car_icon"
+                android:title="Vehicles" />
+            <item
+                android:id="@+id/manage_fuels"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="Fuels" />
+            <item
+                android:id="@+id/manage_events"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Events" />
+            <item
+                android:id="@+id/manage_insurances"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Insurances" />
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

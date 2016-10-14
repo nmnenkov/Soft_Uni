@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">MVH SORM</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="app_name_mvh">My Vehicles History</string>
+    <string name="nenkov_mail">nmnenkov@gmail.com</string>
+    <string name="select_brand">Select Brand</string>
+    <string name="select_model">Select Model</string>
+    <string name="select_vehicle_type">Select vehicle type</string>
+    <string name="select_fuel">Select fuel</string>
+
+
+<!--Settings -->
+    <string name="title_activity_settings2">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="event_type">Event type:</string>
+    <string name="passed_distance">Passed Distance:</string>
+    <string name="date">Date:</string>
+    <string name="_31_12_2024_16_44_33">31/12/2024 16:44:33</string>
+    <string name="location">Location :</string>
+    <string name="photo">Photo:</string>
+    <string name="amount">Amount:</string>
+    <string name="price">Price:</string>
+    <string name="part">Part:</string>
+    <string name="vehicle">Vehicle:</string>
+    <string name="notes">Notes:</string>
+    <string name="nickname">Nickname:</string>
+    <string name="reg_number">Reg Number:</string>
+    <string name="type">Type:</string>
+    <string name="brand">Brand:</string>
+    <string name="model">Model:</string>
+    <string name="engine">Engine:</string>
+    <string name="manufacture_year">Manufacture Year:</string>
+    <string name="purchase_date">Purchase Date:</string>
+    <string name="price1">Price:</string>
+    <string name="warranty_validity">Warranty Validity:</string>
+    <string name="fuel_tank1_fuel">Fuel Tank1 fuel:</string>
+    <string name="fuel_tank1_volume">Fuel Tank1 volume:</string>
+    <string name="has_second_fuel_tank">Has second Fuel Tank</string>
+    <string name="fuel_tank2_fuel">Fuel Tank2 fuel:</string>
+    <string name="fuel_tank2_volume">Fuel Tank2 volume:</string>
+
+</resources>
